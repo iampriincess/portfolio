@@ -1,0 +1,37 @@
+
+.input-float-label { 
+    margin-bottom: 30px;
+    position: relative;    
+}
+
+.input-float-label label {
+    color: $gray_2;
+    font-family: $font_work_sans,$font_sans_serif;
+    font-size: 15px;
+    font-weight: $light_text;
+    left: 0;
+    position: $absolute;
+    text-transform: capitalize;
+    @include browserPrefix( transition, opacity 0.3s ease);
+    @include browserPrefix( transition, top 0.3s ease);
+    top: 15px;
+}
+
+.input-float-label input {
+    height: 40px !important;
+    padding: 0;
+}
+
+.input-float-label input:focus + label {
+    font-size: 13px;
+    opacity: 1;
+    top: -10px;
+    @include browserPrefix( transition, opacity 0.3s ease);
+    @include browserPrefix( transition, top 0.3s ease);
+}
+
+.input-float-label input.ng-not-empty + label,
+.input-float-label input.has-value + label {
+    font-size: 13px;
+    top: -10px;
+}

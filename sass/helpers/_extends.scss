@@ -1,0 +1,19 @@
+%extend_transition-linear {
+	@include browserPrefix( transition, all .1s linear );
+}
+
+%extend_transition-ease-in-out {
+	@include browserPrefix( transition, all .3s ease-in-out );
+}
+
+%extend_transition-ease {
+	@include browserPrefix( transition, all .3s ease );
+}
+
+
+
+%extend_center {
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+}

@@ -1,0 +1,56 @@
+$text-color:	#000;
+$white: 		#fff;
+$red-violet:    #553237;
+$hot-pink:      #FD354E;
+$one_px: 		1px;
+$helvetica: "helveticaregular";
+$helveticaBold: 'helveticabold';
+$helveticaLight: 'helvetica_lightregular';
+$helveticaNeue: 'helveticaneueregular';
+$kefaRegular: 'kefaregular';
+$font-stack:    $helvetica, arial;
+
+body{
+	font: 14px $font-stack;
+	color: $red-violet;
+	background: $white;
+}
+    
+a{
+	text-decoration: none;
+}
+    
+p{
+	line-height: 1.3;
+    font-size: 14px;
+    font-family: $helveticaLight;
+}
+h1{
+	font-size: 45px;
+	line-height: 1.3;
+}
+
+h2{
+	font-size: 40px;
+}
+
+h3{
+    font-size: 14px;
+}
+
+button{
+    &.myButton{
+        background-color: #da0d83;
+        color: $white;
+        font-family: $helveticaLight;
+        font-size: 22px;
+        padding: 10px 15px;
+        transition: all .4s ease-in-out;
+
+        &:hover{
+            color: $white;
+            background-color: $hot-pink;
+        }
+    }
+}
+

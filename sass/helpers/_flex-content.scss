@@ -1,0 +1,4 @@
+@mixin flexContent($flexContent-end){
+    -webkit-justify-content: $flexContent-end;
+            justify-content: $flexContent-end;
+}

@@ -1,0 +1,102 @@
+//
+// Variables
+// -------------------------------------------------
+
+//== Colors
+//
+//white 
+$white: #FFF;
+
+//transparent
+$transparent: transparent;
+
+//red 
+$red: #F04741;
+
+//black
+$black_1: #000000;
+$black_2: #343434;
+$black_3: #222;
+$black_4: #818181;
+
+//pink
+$pink_1: #f87295;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font_muli: 'Muli';
+$font_open_sans:  'Open Sans';
+$font_sans_serif: sans-serif;
+
+$bold: 700;
+$semi-bold: 600;
+$medium: 500;
+$regular: 400;
+$light-text: 300;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
